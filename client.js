@@ -9,7 +9,9 @@ const connect = function () {
 
   conn.on("connect", () => {
     //code that does something when the connection is first established
-    console.log("Successfully connected to server!");
+    console.log("Successfully connected to game server!");
+    const message = "Name: KMO"
+    conn.write(message);
   });
 
   //handle data from the server code and display the message to the console
