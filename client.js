@@ -10,6 +10,7 @@ const connect = function () {
   conn.on("connect", () => {
     //code that sends a message when the connection is first established
     console.log("Successfully connected to game server!");
+    //code that communicated with server to compelte specific commands
     conn.write("Name: KMO");
     //conn.write("Move: up");
     //conn.write("Move: down");
