@@ -33,7 +33,7 @@ const connect = function () {
 console.log("connecting ...");
 connect();
 
-//export to play.js
+//export connect function to play.js
 module.exports = {
   connect,
 }
