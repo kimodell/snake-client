@@ -3,6 +3,8 @@ const { connect } = require("./client");
 //import setupInput function from input.js
 const { setupInput } = require("./input");
 
-connect();
+// Store the connection object returned by connect in a variable
+const conn = connect();
 
-setupInput();
+// Now pass the connection object to setupInput
+setupInput(conn);

@@ -12,7 +12,7 @@ const connect = function () {
     console.log("Successfully connected to game server!");
     //code that communicated with server to compelte specific commands
     conn.write("Name: KMO");
-    //conn.write("Move: up");
+    conn.write("Move: up");
     //conn.write("Move: down");
     //conn.write("Move: left");
     //conn.write("Move right");
