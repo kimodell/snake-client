@@ -16,6 +16,18 @@ const handleUserInput = function(data) {
   if (data === 'd') {
     connection.write("Move: right")
   }
+  if (data === 'g') {
+    connection.write("Say: GG WP")
+  }
+  if (data === 'e') {
+    connection.write("Say: Sorry N00b")
+  }
+  if (data === 'r') {
+    connection.write("Say: Maybe pratice first")
+  }
+  if (data === 'f') {
+    connection.write("Say: GLHF")
+  }
 };
 
 let connection;
