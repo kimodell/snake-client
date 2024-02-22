@@ -6,5 +6,5 @@ const { setupInput } = require("./input");
 // Store the connection object returned by connect in a variable
 const conn = connect();
 
-// Now pass the connection object to setupInput
+// Pass the connection object to setupInput
 setupInput(conn);

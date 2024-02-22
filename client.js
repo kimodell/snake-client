@@ -1,8 +1,8 @@
 const net = require("net");
 const { IP, PORT } = require("./constants");
 
-//establishes connection with gamer server
-const connect = function () {
+//function that establishes connection with gamer server
+const connect = function() {
   const conn = net.createConnection({
     host: IP,
     port: PORT,
@@ -33,4 +33,4 @@ console.log("connecting ...");
 //export connect function to play.js
 module.exports = {
   connect,
-}
+};
