@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["Snake game in action!"](https://thumbs2.imgbox.com/2f/34/nG4Ome3a_t.png)
+!["Snake game in action!"](https://images2.imgbox.com/2f/34/nG4Ome3a_o.png)
 
 
 ## Purpose
