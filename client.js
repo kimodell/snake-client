@@ -1,7 +1,7 @@
 const net = require("net");
 const { IP, PORT } = require("./constants");
 
-//function that establishes connection with gamer server
+//Function that establishes connection with gamer server
 const connect = function() {
   const conn = net.createConnection({
     host: IP,
@@ -9,19 +9,19 @@ const connect = function() {
   });
 
   conn.on("connect", () => {
-    //code that sends a message when the connection is first established
+    //Code that sends a message when the connection is first established
     console.log("Successfully connected to game server!");
-    //code that communicates with server to display player initials
+    //Code that communicates with server to display player initials
     conn.write("Name: KMO");
   });
 
-  //handle data from the server code and display the message to the console
+  //Handle data from the server code and display the message to the console
   conn.on("data", (data) => {
     console.log(data);
   });
 
 
-  //interpret incoming data as text
+  //Interpret incoming data as text
   conn.setEncoding("utf8");
 
   return conn;
@@ -30,7 +30,7 @@ const connect = function() {
 console.log("connecting ...");
 
 
-//export connect function to play.js
+//Export connect function 
 module.exports = {
   connect,
 };

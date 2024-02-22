@@ -1,9 +1,11 @@
 const { keyMap } = require("./constants");
-//function to handle keyboard inputs by user, including exiting the game with ctrl + c and all actions mapped to keys in the keyMap object from constants.js
 
+//Function to handle keyboard inputs by user for moving or exiting the game
 const handleUserInput = function(data) {
+  //Pressing ctrl + c in the terminal sends an "End of Text" character, indicating we should exit application
   if (data === '\u0003') {
     process.exit();
+    //Look up other mapped keys in keyMap and send the command assoicated with the mapped key to the server
   } else if (keyMap[data]) {
     connection.write(keyMap[data]);
   }
@@ -11,7 +13,7 @@ const handleUserInput = function(data) {
 
 let connection;
 
-// setup interface to handle user input from stdin
+// Setup interface to handle user input from stdin
 
 const setupInput = (conn) => {
   connection = conn;
@@ -23,7 +25,7 @@ const setupInput = (conn) => {
   return stdin;
 };
 
-//export to play.js
+//Export to play.js
 module.exports = {
   setupInput,
 };

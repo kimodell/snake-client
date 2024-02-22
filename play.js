@@ -1,6 +1,6 @@
-//import connect function from client.js
+//Import connect function from client.js
 const { connect } = require("./client");
-//import setupInput function from input.js
+//Import setupInput function from input.js
 const { setupInput } = require("./input");
 
 // Store the connection object returned by connect in a variable

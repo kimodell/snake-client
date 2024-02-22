@@ -4,11 +4,11 @@ Snake game is a very popular video game where the player maneuvers a dot, or sna
 
 The Snake Client Project is simply a multiplayer take on the snake game, complete with some sassy messages to shout at your opponent!
 
-Before you can run this client, you will need to be running the server side which you can download and install from here. 
+Before you can run this client, you will need to be running the server side which you can clone from [here](https://github.com/kimodell/snek-multiplayer.git). 
 
 ## Final Product
 
-!["Snake game in action!"](image.png)
+!["Snake game in action!"](https://imgbox.com/oddFNk1y)
 
 
 ## Purpose
@@ -19,8 +19,9 @@ This project was based on the game [Snek](https://github.com/taniarascia/snek) c
 
 ## Getting Started
 
-- Follow steps inside the snek server repo to run the server side
-- Run the development snake client using the `node play.js` command.
+- Follow steps inside the snek server repo to run the server side.
+- Run the snek server using the `node play.j` command.
+- Run the development snake client in a seperate terminal window using the `node play.js` command.
 
 ## Controls
 

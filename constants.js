@@ -1,4 +1,4 @@
-//module containing constant values which are exported for use in the rest of the app
+//Module containing constant values which are exported for use in the rest of the app
 
 const IP = "localhost";
 
@@ -17,6 +17,7 @@ const keyMap = {
   'f': "Say: GLHF",
 };
 
+//Export constants to rest of the app
 module.exports = {
   IP,
   PORT,
